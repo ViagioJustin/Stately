@@ -1,0 +1,27 @@
+name: stately
+
+packages:
+  - examples/**
+  - packages/**
+
+scripts:
+  analyze:
+    exec: dart analyze .
+  
+  test:all:
+    run: |
+      melos run test --no-select
+    description: |
+      Run all tests available.
+  
+  test:
+    run: |
+      melos exec --fail-fast -- \
+        "flutter test"
+    description: Run `flutter test` for a specific package.
+    packageFilters:
+      dirExists:
+        - test
+      ignore:
+        - '*web*'
+        - '*example*'
