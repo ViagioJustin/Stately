@@ -1,5 +1,5 @@
 name: stately_notifier
-description: "A new Flutter package project."
+description: "Stately implementation for Flutter's state management primitives."
 version: 1.0.0
 repository: https://github.com/ViagioJustin/Stately
 homepage:

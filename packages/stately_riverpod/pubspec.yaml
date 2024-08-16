@@ -1,5 +1,5 @@
 name: stately_riverpod
-description: "A new Flutter package project."
+description: "Stately implementation for Riverpod's Notifiers"
 version: 1.0.0
 repository: https://github.com/ViagioJustin/Stately
 homepage:
