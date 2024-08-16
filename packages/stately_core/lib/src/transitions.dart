@@ -38,7 +38,7 @@ StatelyTransitionCaller<Event, State>
     transition<Event, State, REvent extends Event, InState extends State>(
   StatelyTransition<REvent, InState, State> transition,
 ) =>
-        StatelyTransitionCaller<Event, State>(
+        StatelyTransitionCaller.fromTransition(
           transition: (event, state) =>
               transition(event as REvent, state as InState),
         );
@@ -59,7 +59,7 @@ StatelyTransitionCaller<Event, State>
     sideEffect<Event, State, REvent extends Event, InState extends State>(
   SideEffect<REvent, InState> sideEffect,
 ) =>
-        StatelyTransitionCaller<Event, State>(
+        StatelyTransitionCaller.fromSideEffect(
           sideEffect: (event, state) =>
               sideEffect(event as REvent, state as InState),
         );
