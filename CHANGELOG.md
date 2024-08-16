@@ -15,6 +15,27 @@ Packages with breaking changes:
 
 Packages with other changes:
 
+ - [`stately_notifier` - `v1.0.0`](#stately_notifier---v100)
+
+---
+
+#### `stately_notifier` - `v1.0.0`
+
+ - Bump "stately_notifier" to `1.0.0`.
+
+
+## 2024-08-16
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
  - [`stately_bloc` - `v1.0.0`](#stately_bloc---v100)
 
 ---
