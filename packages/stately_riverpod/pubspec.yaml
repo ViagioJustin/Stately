@@ -1,6 +1,6 @@
 name: stately_riverpod
 description: "Stately implementation for Riverpod's Notifiers"
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/ViagioJustin/Stately
 homepage:
 
@@ -14,7 +14,7 @@ dependencies:
   flutter_riverpod: ^2.5.1
   riverpod: ^2.5.1
   riverpod_annotation: ^2.3.5
-  stately_core: ^1.0.0
+  stately_core: ^1.0.1
 
 dev_dependencies:
   flutter_test:

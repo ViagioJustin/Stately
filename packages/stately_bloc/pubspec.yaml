@@ -1,6 +1,6 @@
 name: stately_bloc
 description: "Implements the Stately FSM into the popular bloc package."
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/ViagioJustin/Stately
 homepage:
 
@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   bloc: ^8.1.4
-  stately_core: ^1.0.0
+  stately_core: ^1.0.1
   equatable: ^2.0.5
 
 dev_dependencies:
