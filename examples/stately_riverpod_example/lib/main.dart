@@ -96,7 +96,7 @@ class MyHomePage extends ConsumerWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'The counter is currently:',
             ),
             Text(
               state.value.toString(),

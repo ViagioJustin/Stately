@@ -1,9 +1,11 @@
 import 'package:bloc/bloc.dart';
 import 'package:stately_core/stately_core.dart';
 
-/// The basic class for a GraphBloc.
-abstract class StatelyGraphBloc<Event, State> extends Bloc<Event, State>
-    with StatelyGraphMixin<Event, State> {
+/// The [StatelyGraphBloc] is a [Bloc] that uses a [StatelyGraph] to determine the next state based on the event.
+///
+/// This underlying architecture is simple here; a single event handler that is called for any [Event] that is
+/// then passed to the _handleGraphEvent function. This function uses the [graph] to determine the next state.
+abstract class StatelyGraphBloc<Event, State> extends Bloc<Event, State> with StatelyGraphMixin<Event, State> {
   StatelyGraphBloc(super.initialState) {
     // configure a single on<Event> handler that passes the event to the _handleGraphEvent function
     // that's in charge of using [graph] to determine the next state.
@@ -13,7 +15,7 @@ abstract class StatelyGraphBloc<Event, State> extends Bloc<Event, State>
 
   late final StatelyGraph<Event, State> _graph;
 
-  // Check if the event is handled by the graph.
+  // Handle the event by getting the transition from the graph and then emitting the new state.
   void _handleGraphEvent(Event event, Emitter emit) {
     final transition = _graph.getTransitionFor(event, state);
     if (transition == null) {

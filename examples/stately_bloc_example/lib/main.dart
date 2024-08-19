@@ -93,7 +93,7 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'The counter is currently:',
             ),
             BlocBuilder<CounterBloc, CounterState>(
               builder: (context, state) {
